@@ -11,15 +11,15 @@ namespace AmusementPark.Service
 {
     public class OrderService : Iservice<OrderEntity>
     {
-        readonly IRepository<OrderEntity> _orderRepository;
+        readonly IOrderRepository _orderRepository;
 
-        public OrderService(IRepository<OrderEntity> orderRepository)
+        public OrderService(IOrderRepository orderRepository)
         {
             _orderRepository = orderRepository;
         }
         public IEnumerable<OrderEntity> getall()
         {
-            return _orderRepository.GetList();
+            return _orderRepository.GetFull();
         }
 
         public OrderEntity getById(int id)

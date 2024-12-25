@@ -18,7 +18,7 @@ namespace AmusementPark.Api.Controllers
         }
         // GET: api/<CustomerController>
         [HttpGet]
-        public ActionResult<List<CustomerEntity>> Get()
+        public List<CustomerEntity> Get()
         {
             return _customerService.getall().ToList();
  

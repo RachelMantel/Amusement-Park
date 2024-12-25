@@ -19,7 +19,7 @@ namespace AmusementPark.Api.Controllers
 
         // GET: api/<OrderController>
         [HttpGet]
-        public ActionResult<List<OrderEntity>> Get()
+        public List<OrderEntity> Get()
         {
             return _orderService.getall().ToList();
         }

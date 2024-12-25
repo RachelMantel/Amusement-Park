@@ -26,6 +26,10 @@ namespace AmusementPark.Core.Entities
 
         public bool Status { get; set; }
 
+        //one-to-many
+        public int? facilitieId { get; set; }
+        public FacilitieEntity? facilitie { get; set; }
+
         public EmployeeEntity()
         {
             

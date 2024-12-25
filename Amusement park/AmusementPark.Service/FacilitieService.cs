@@ -9,23 +9,23 @@ using System.Threading.Tasks;
 
 namespace AmusementPark.Service
 {
-    public class FacilitieService: Iservice<FacilitieEntity>
+    public class FacilitieService : Iservice<FacilitieEntity>
     {
-        readonly IRepository<FacilitieEntity> _facilityRepository;
+        readonly IFacilitieRepository _facilitieRepository;
 
-        public FacilitieService(IRepository<FacilitieEntity> facilityRepository)
+        public FacilitieService(IFacilitieRepository facilitieRepository)
         {
-            _facilityRepository = facilityRepository;
+            _facilitieRepository = facilitieRepository;
         }
         public IEnumerable<FacilitieEntity> getall()
         {
-            return _facilityRepository.GetList();
+            return _facilitieRepository.GetFull();
         }
 
         public FacilitieEntity getById(int id)
         {
 
-            return _facilityRepository.GetById(id);
+            return _facilitieRepository.GetById(id);
         }
 
         public FacilitieEntity add(FacilitieEntity facilitie)
@@ -33,18 +33,18 @@ namespace AmusementPark.Service
             if (facilitie == null)
                 return null;
 
-            return _facilityRepository.Add(facilitie);
+            return _facilitieRepository.Add(facilitie);
         }
 
         public FacilitieEntity update(int id,FacilitieEntity facilitie)
         {
-            return _facilityRepository.Update(id,facilitie);
+            return _facilitieRepository.Update(id,facilitie);
         }
 
         public bool delete(int id)
         {
 
-          return _facilityRepository.Delete(id);
+          return _facilitieRepository.Delete(id);
         }
     }
 }

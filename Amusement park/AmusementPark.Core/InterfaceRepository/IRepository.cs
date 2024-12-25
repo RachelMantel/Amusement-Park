@@ -8,7 +8,7 @@ namespace AmusementPark.Core.InterfaceRepository
 {
     public interface IRepository<T>
     {
-        IEnumerable<T> GetList();
+        IEnumerable<T> Get();
 
         T? GetById(int id);
 

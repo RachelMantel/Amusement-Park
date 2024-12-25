@@ -3,27 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|solutionrelative:amusementpark.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BC9AD1D-79C9-4461-8F22-BD71E2DD50D3}|AmusementPark.Extesion\\AmusementPark.Extesion.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.extesion\\extesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC9AD1D-79C9-4461-8F22-BD71E2DD50D3}|AmusementPark.Extesion\\AmusementPark.Extesion.csproj|solutionrelative:amusementpark.extesion\\extesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\interfacerepository\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\interfacerepository\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}|AmusementPark.Api\\AmusementPark.Api.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}|AmusementPark.Api\\AmusementPark.Api.csproj|solutionrelative:amusementpark.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.data\\repositories\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|solutionrelative:amusementpark.data\\repositories\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.data\\repositories\\facilitierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|solutionrelative:amusementpark.data\\repositories\\facilitierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.data\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|solutionrelative:amusementpark.data\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.service\\facilitieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|solutionrelative:amusementpark.service\\facilitieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\buildTransitive\\netcoreapp2.0\\Microsoft.Extensions.DependencyInjection.Abstractions.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.service\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|solutionrelative:amusementpark.service\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\interfacerepository\\ifacilitierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\interfacerepository\\ifacilitierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}|AmusementPark.Api\\AmusementPark.Api.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.api\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,6 +39,70 @@
       "RelativeMoniker": "D:0:0:{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}|AmusementPark.Api\\AmusementPark.Api.csproj|solutionrelative:amusementpark.api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}|AmusementPark.Api\\AmusementPark.Api.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}|AmusementPark.Api\\AmusementPark.Api.csproj|solutionrelative:amusementpark.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\interfaceservice\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\interfaceservice\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|solutionrelative:amusementpark.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\interfacerepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\interfacerepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.service\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|solutionrelative:amusementpark.service\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|solutionrelative:amusementpark.service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.service\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|solutionrelative:amusementpark.service\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|solutionrelative:amusementpark.service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\interfacerepository\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\interfacerepository\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.data\\repositories\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|solutionrelative:amusementpark.data\\repositories\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|solutionrelative:amusementpark.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.data\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|solutionrelative:amusementpark.data\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.data\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|solutionrelative:amusementpark.data\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\interfacerepository\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\interfacerepository\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\interfacerepository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\interfacerepository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\interfacerepository\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\interfacerepository\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,16 +111,16 @@
       "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\entities\\employeeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}|AmusementPark.Data\\AmusementPark.Data.csproj|solutionrelative:amusementpark.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\entities\\orderentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\entities\\orderentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.service\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|solutionrelative:amusementpark.service\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\entities\\facilitieentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\entities\\facilitieentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.service\\facilitieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}|AmusementPark.Service\\AmusementPark.Service.csproj|solutionrelative:amusementpark.service\\facilitieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|c:\\users\\user1\\desktop\\amusement park\\amusement park\\amusementpark.core\\entities\\ticketentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01065FB5-6AF3-40AA-89EC-4F2BF859E178}|AmusementPark.Core\\AmusementPark.Core.csproj|solutionrelative:amusementpark.core\\entities\\ticketentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -68,8 +129,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 271,
-          "SelectedChildIndex": 8,
+          "DockedHeight": 260,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -77,137 +138,146 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RepositoryManager.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\RepositoryManager.cs",
-              "RelativeDocumentMoniker": "AmusementPark.Data\\Repositories\\RepositoryManager.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\RepositoryManager.cs",
-              "RelativeToolTip": "AmusementPark.Data\\Repositories\\RepositoryManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Program.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Program.cs",
+              "RelativeToolTip": "AmusementPark.Api\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCEAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T16:05:19.979Z",
+              "WhenOpened": "2024-12-22T23:08:21.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "AmusementPark.Data\\Repositories\\CustomerRepository.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\CustomerRepository.cs",
-              "RelativeToolTip": "AmusementPark.Data\\Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "FacilitieService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\FacilitieService.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Service\\FacilitieService.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\FacilitieService.cs",
+              "RelativeToolTip": "AmusementPark.Service\\FacilitieService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T14:58:10.86Z"
+              "WhenOpened": "2024-12-22T23:44:35.485Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Microsoft.Extensions.DependencyInjection.Abstractions.targets",
-              "DocumentMoniker": "C:\\Users\\user1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\buildTransitive\\netcoreapp2.0\\Microsoft.Extensions.DependencyInjection.Abstractions.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\buildTransitive\\netcoreapp2.0\\Microsoft.Extensions.DependencyInjection.Abstractions.targets",
-              "ToolTip": "C:\\Users\\user1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\buildTransitive\\netcoreapp2.0\\Microsoft.Extensions.DependencyInjection.Abstractions.targets",
-              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\buildTransitive\\netcoreapp2.0\\Microsoft.Extensions.DependencyInjection.Abstractions.targets",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-12-09T21:30:34.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TicketController.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\TicketController.cs",
-              "RelativeDocumentMoniker": "AmusementPark.Api\\Controllers\\TicketController.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\TicketController.cs",
-              "RelativeToolTip": "AmusementPark.Api\\Controllers\\TicketController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAuwDUAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ExtesionService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Extesion\\ExtesionService.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Extesion\\ExtesionService.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Extesion\\ExtesionService.cs*",
+              "RelativeToolTip": "AmusementPark.Extesion\\ExtesionService.cs*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBkAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T20:41:31.996Z"
+              "WhenOpened": "2024-12-22T23:08:38.004Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "AmusementPark.Api\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "AmusementPark.Api\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T20:41:23.63Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "FacilitieController.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\FacilitieController.cs",
               "RelativeDocumentMoniker": "AmusementPark.Api\\Controllers\\FacilitieController.cs",
               "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\FacilitieController.cs",
               "RelativeToolTip": "AmusementPark.Api\\Controllers\\FacilitieController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwC8AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T20:41:17.853Z"
+              "WhenOpened": "2024-12-23T00:08:54.692Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
+              "Title": "IFacilitieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\IFacilitieRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\InterfaceRepository\\IFacilitieRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\IFacilitieRepository.cs",
+              "RelativeToolTip": "AmusementPark.Core\\InterfaceRepository\\IFacilitieRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:35:19.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FacilitieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\FacilitieRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Data\\Repositories\\FacilitieRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\FacilitieRepository.cs",
+              "RelativeToolTip": "AmusementPark.Data\\Repositories\\FacilitieRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:52:54.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TicketController.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\TicketController.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Api\\Controllers\\TicketController.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\TicketController.cs",
+              "RelativeToolTip": "AmusementPark.Api\\Controllers\\TicketController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T20:41:31.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Iservice.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceService\\Iservice.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\InterfaceService\\Iservice.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceService\\Iservice.cs",
+              "RelativeToolTip": "AmusementPark.Core\\InterfaceService\\Iservice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T23:56:40.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "AmusementPark.Api\\Controllers\\EmployeeController.cs",
               "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "AmusementPark.Api\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDEAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T20:41:08.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "AmusementPark.Data\\Repositories\\Repository.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\Repository.cs",
-              "RelativeToolTip": "AmusementPark.Data\\Repositories\\Repository.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwE8AAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:28:50.7Z",
+              "WhenOpened": "2024-12-23T00:08:43.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EmployeeEntity.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\EmployeeEntity.cs",
-              "RelativeDocumentMoniker": "AmusementPark.Core\\Entities\\EmployeeEntity.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\EmployeeEntity.cs",
-              "RelativeToolTip": "AmusementPark.Core\\Entities\\EmployeeEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Api\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "AmusementPark.Api\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:45:05.292Z"
+              "WhenOpened": "2024-12-23T00:09:03.614Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CustomerEntity.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\CustomerEntity.cs",
-              "RelativeDocumentMoniker": "AmusementPark.Core\\Entities\\CustomerEntity.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\CustomerEntity.cs",
-              "RelativeToolTip": "AmusementPark.Core\\Entities\\CustomerEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\OrderService.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Service\\OrderService.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\OrderService.cs",
+              "RelativeToolTip": "AmusementPark.Service\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:43:25.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "AmusementPark.Data\\Repositories\\OrderRepository.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\OrderRepository.cs",
-              "RelativeToolTip": "AmusementPark.Data\\Repositories\\OrderRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:48:29.506Z"
+              "WhenOpened": "2024-12-22T23:46:33.097Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -217,46 +287,244 @@
               "RelativeDocumentMoniker": "AmusementPark.Service\\TicketService.cs",
               "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\TicketService.cs",
               "RelativeToolTip": "AmusementPark.Service\\TicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:09:00.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IRepositoryManager.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\IRepositoryManager.cs",
-              "RelativeDocumentMoniker": "AmusementPark.Core\\InterfaceRepository\\IRepositoryManager.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\IRepositoryManager.cs",
-              "RelativeToolTip": "AmusementPark.Core\\InterfaceRepository\\IRepositoryManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:39:40.029Z",
+              "WhenOpened": "2024-12-22T23:47:48.87Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FacilitieService.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\FacilitieService.cs",
-              "RelativeDocumentMoniker": "AmusementPark.Service\\FacilitieService.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\FacilitieService.cs",
-              "RelativeToolTip": "AmusementPark.Service\\FacilitieService.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwC4AAAAuAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Data\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\Repository.cs",
+              "RelativeToolTip": "AmusementPark.Data\\Repositories\\Repository.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:06:17.965Z"
+              "WhenOpened": "2024-12-09T17:28:50.7Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Api\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Api\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "AmusementPark.Api\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T23:05:48.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\InterfaceRepository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\IRepository.cs",
+              "RelativeToolTip": "AmusementPark.Core\\InterfaceRepository\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T23:02:39.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\CustomerService.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Service\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\CustomerService.cs",
+              "RelativeToolTip": "AmusementPark.Service\\CustomerService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T23:08:07.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\EmployeeService.cs",
               "RelativeDocumentMoniker": "AmusementPark.Service\\EmployeeService.cs",
               "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Service\\EmployeeService.cs",
               "RelativeToolTip": "AmusementPark.Service\\EmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:05:00.752Z"
+              "WhenOpened": "2024-12-22T23:42:04.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\InterfaceRepository\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\ICustomerRepository.cs",
+              "RelativeToolTip": "AmusementPark.Core\\InterfaceRepository\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:33:06.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Data\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "AmusementPark.Data\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:44:40.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Data\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "AmusementPark.Data\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:53:41.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TicketRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\TicketRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Data\\Repositories\\TicketRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\TicketRepository.cs",
+              "RelativeToolTip": "AmusementPark.Data\\Repositories\\TicketRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:54:10.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Data\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Data\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "AmusementPark.Data\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:52:21.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ITicketRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\ITicketRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\InterfaceRepository\\ITicketRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\ITicketRepository.cs",
+              "RelativeToolTip": "AmusementPark.Core\\InterfaceRepository\\ITicketRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:34:38.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\InterfaceRepository\\IOrderRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\IOrderRepository.cs",
+              "RelativeToolTip": "AmusementPark.Core\\InterfaceRepository\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:34:13.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\InterfaceRepository\\IEmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\InterfaceRepository\\IEmployeeRepository.cs",
+              "RelativeToolTip": "AmusementPark.Core\\InterfaceRepository\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:33:17.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FacilitieEntity.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\FacilitieEntity.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\Entities\\FacilitieEntity.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\FacilitieEntity.cs",
+              "RelativeToolTip": "AmusementPark.Core\\Entities\\FacilitieEntity.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:37:57.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CustomerEntity.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\CustomerEntity.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\Entities\\CustomerEntity.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\CustomerEntity.cs",
+              "RelativeToolTip": "AmusementPark.Core\\Entities\\CustomerEntity.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T16:43:25.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EmployeeEntity.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\EmployeeEntity.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\Entities\\EmployeeEntity.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\EmployeeEntity.cs",
+              "RelativeToolTip": "AmusementPark.Core\\Entities\\EmployeeEntity.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswBwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:58:13.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "OrderEntity.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\OrderEntity.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\Entities\\OrderEntity.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\OrderEntity.cs",
+              "RelativeToolTip": "AmusementPark.Core\\Entities\\OrderEntity.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:43:33.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TicketEntity.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\TicketEntity.cs",
+              "RelativeDocumentMoniker": "AmusementPark.Core\\Entities\\TicketEntity.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\Amusement park\\Amusement park\\AmusementPark.Core\\Entities\\TicketEntity.cs",
+              "RelativeToolTip": "AmusementPark.Core\\Entities\\TicketEntity.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA5wBMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:43:14.227Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -11,18 +11,18 @@ namespace AmusementPark.Service
 {
     public class CustomerService : Iservice<CustomerEntity>
     {
-        readonly IRepository<CustomerEntity> _customerRepository;
+        readonly ICustomerRepository _customerRepository;
 
-        public CustomerService(IRepository<CustomerEntity> customerRepository)
+        public CustomerService(ICustomerRepository customerRepository)
         {
             _customerRepository = customerRepository;
         }
         public IEnumerable<CustomerEntity> getall()
         {
-            return _customerRepository.GetList();
+            return _customerRepository.GetFull();
         }
 
-        public CustomerEntity getById(int id)
+        public CustomerEntity? getById(int id)
         {
 
             return _customerRepository.GetById(id);
@@ -45,7 +45,6 @@ namespace AmusementPark.Service
         {
             return _customerRepository.Delete(id);
         }
-
 
     }
 }

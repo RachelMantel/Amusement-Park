@@ -24,6 +24,7 @@ namespace AmusementPark.Core.Entities
         public int Points { get; set; }
 
         public string CustomerType { get; set; }
+        public List<OrderEntity> Orders { get; set; }
         public CustomerEntity()
         {
             

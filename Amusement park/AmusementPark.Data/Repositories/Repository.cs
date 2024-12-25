@@ -20,7 +20,7 @@ namespace AmusementPark.Data.Repositories
             _dataSet = dataContext.Set<T>();
             _iManager = manager;
         }
-        public IEnumerable<T> GetList()
+        public IEnumerable<T> Get()
         {
             return _dataSet.ToList();
         }
@@ -35,38 +35,6 @@ namespace AmusementPark.Data.Repositories
             return t;
         }
 
-        //public T Update(int id, T updatedEntity)
-        //{
-        //    var existingEntity = _dataSet.Find(id);
-        //    if (existingEntity == null)
-        //    {
-        //        return null;
-        //    }
-        //    var entry = help.Entry(existingEntity);
-
-        //    foreach (var property in entry.Properties)
-        //    {
-        //        var updatedValue = updatedEntity.GetType().GetProperty(property.Metadata.Name)?.GetValue(updatedEntity);
-
-   
-        //        if (updatedValue != null && !property.Metadata.IsKey())
-        //        {
-        //            property.CurrentValue = updatedValue;
-        //        }
-
-        //    }
-        //    _iManager.save();
-        //    return existingEntity;
-        //}
-
-        //private bool IsDefaultValue(object value, Type type)
-        //{
-        //    if (type.IsValueType)
-        //    {
-        //        return value.Equals(Activator.CreateInstance(type));
-        //    }
-        //    return value == null;
-        //}
 
         public T Update(int id, T updatedEntity)
         {
@@ -103,5 +71,6 @@ namespace AmusementPark.Data.Repositories
             }
             return false;
         }
+
     }
 }

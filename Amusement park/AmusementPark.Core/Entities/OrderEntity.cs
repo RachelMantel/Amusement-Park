@@ -10,9 +10,14 @@ namespace AmusementPark.Core.Entities
         [Key]
         public int Id { get; set; }
 
+        //one to one
         public int TicketId { get; set; }
+        public TicketEntity ticket { get; set; }
 
+
+     //one-to-many
         public int CustomerId { get; set; }
+        public CustomerEntity Customer { get; set; }
 
         public DateTime OrderDate { get; set; }
 

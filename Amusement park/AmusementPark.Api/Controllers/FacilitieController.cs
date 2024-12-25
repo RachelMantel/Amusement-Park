@@ -19,7 +19,7 @@ namespace AmusementPark.Api.Controllers
 
         // GET: api/<FacilitieController>
         [HttpGet]
-        public ActionResult<List<FacilitieEntity>> Get()
+        public List<FacilitieEntity> Get()
         {
             return _facilityService.getall().ToList();
         }

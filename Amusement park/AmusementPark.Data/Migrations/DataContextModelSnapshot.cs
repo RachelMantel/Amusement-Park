@@ -105,7 +105,12 @@ namespace AmusementPark.Data.Migrations
                     b.Property<int>("WorkingHours")
                         .HasColumnType("int");
 
+                    b.Property<int?>("facilitieId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("facilitieId");
 
                     b.ToTable("Employees");
                 });
@@ -175,6 +180,11 @@ namespace AmusementPark.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("TicketId")
+                        .IsUnique();
+
                     b.ToTable("Orders");
                 });
 
@@ -202,6 +212,50 @@ namespace AmusementPark.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tickets");
+                });
+
+            modelBuilder.Entity("AmusementPark.Core.Entities.EmployeeEntity", b =>
+                {
+                    b.HasOne("AmusementPark.Core.Entities.FacilitieEntity", "facilitie")
+                        .WithMany("employees")
+                        .HasForeignKey("facilitieId");
+
+                    b.Navigation("facilitie");
+                });
+
+            modelBuilder.Entity("AmusementPark.Core.Entities.OrderEntity", b =>
+                {
+                    b.HasOne("AmusementPark.Core.Entities.CustomerEntity", "Customer")
+                        .WithMany("Orders")
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AmusementPark.Core.Entities.TicketEntity", "ticket")
+                        .WithOne("Order")
+                        .HasForeignKey("AmusementPark.Core.Entities.OrderEntity", "TicketId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("ticket");
+                });
+
+            modelBuilder.Entity("AmusementPark.Core.Entities.CustomerEntity", b =>
+                {
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("AmusementPark.Core.Entities.FacilitieEntity", b =>
+                {
+                    b.Navigation("employees");
+                });
+
+            modelBuilder.Entity("AmusementPark.Core.Entities.TicketEntity", b =>
+                {
+                    b.Navigation("Order")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

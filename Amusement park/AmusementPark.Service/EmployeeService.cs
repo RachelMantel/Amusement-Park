@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 
 namespace AmusementPark.Service
 {
-    public class EmployeeService: Iservice<EmployeeEntity>
+    public class EmployeeService : Iservice<EmployeeEntity>
     {
-        readonly IRepository<EmployeeEntity> _employeeRepository;
+        readonly IEmployeeRepository _employeeRepository;
 
-        public EmployeeService(IRepository<EmployeeEntity> employeeRepository)
+        public EmployeeService(IEmployeeRepository employeeRepository)
         {
             _employeeRepository = employeeRepository;
         }
         public IEnumerable<EmployeeEntity> getall()
         {
-            return _employeeRepository.GetList();
+            return _employeeRepository.GetFull();
         }
 
         public EmployeeEntity getById(int id)

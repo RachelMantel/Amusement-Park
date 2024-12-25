@@ -20,13 +20,15 @@ namespace AmusementPark.Extesion
             s.AddScoped<Iservice<EmployeeEntity>, EmployeeService>();
             s.AddScoped<Iservice<FacilitieEntity>, FacilitieService>();
             s.AddScoped<Iservice<OrderEntity>, OrderService>();
-            s.AddScoped<Iservice<TicketEntity>, TicketService>();
+            s.AddScoped<Iservice<TicketEntity>,TicketService>();
 
-            //s.AddScoped<IRepository<CustomerEntity>, CustomerRepository>();
-            //s.AddScoped<IRepository<EmployeeEntity>, EmployeeRepository>();
-            //s.AddScoped<IRepository<FacilitieEntity>, FacilitieRepository>();
-            //s.AddScoped<IRepository<OrderEntity>, OrderRepository>();
-            //s.AddScoped<IRepository<TicketEntity>, TicketRepository>();
+            s.AddScoped<ICustomerRepository, CustomerRepository>();
+            s.AddScoped<IFacilitieRepository, FacilitieRepository>();
+            s.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            s.AddScoped<IOrderRepository, OrderRepository>();
+            s.AddScoped<ITicketRepository, TicketRepository>();
+            s.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            s.AddScoped<IRepositoryManager, RepositoryManager>();
             s.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             s.AddScoped<IRepositoryManager, RepositoryManager>();
 

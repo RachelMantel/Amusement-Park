@@ -20,7 +20,7 @@ namespace AmusementPark.Api.Controllers
 
         // GET: api/<EmployeeController>
         [HttpGet]
-        public ActionResult<List<EmployeeEntity>> Get()
+        public List<EmployeeEntity> Get()
         {
             return _employeeService.getall().ToList();
         }

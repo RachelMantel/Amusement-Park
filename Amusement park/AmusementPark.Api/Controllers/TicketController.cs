@@ -19,7 +19,7 @@ namespace AmusementPark.Api.Controllers
         }
         // GET: api/<TicketController>
         [HttpGet]
-        public ActionResult<List<TicketEntity>> Get()
+        public List<TicketEntity> Get()
         {
             return _ticketService.getall().ToList();
         }

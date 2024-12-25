@@ -21,6 +21,8 @@ namespace AmusementPark.Core.Entities
 
         public int RoundDuration { get; set; }
 
+        public List<EmployeeEntity> employees { get; set; }
+
         public FacilitieEntity()
         {
             
