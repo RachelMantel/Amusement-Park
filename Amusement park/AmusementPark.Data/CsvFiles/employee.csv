@@ -1,0 +1,8 @@
+Id,Tz,Name,Email,Phone,Role,Seniority,Salary,WorkingHours,Status
+2,123456789,Alice Smith,jane@example.com,-2175765,Activity Guide,2,5500,40,True
+4,123456780,Bob Johnson,bob@example.com,-7008160,Team Manager,1,7000,42,True
+5,123456700,Carol Lee,charlie@example.com,-2053468,Cleaner,5,4000,38,True
+6,258369147,David Brown,diana@example.com,-1484800,Cashier,6,5000,40,False
+7,852963741,Emily Davis,bruce@example.com,-3270261,Ride Operator,7,6000,45,True
+8,654987123,Frank Miller,clark@example.com,-7947319,Activity Guide,2,6000,40,False
+9,451269873,Grace Wilson,arthur@example.com,-2000835,Activity Guide,8,6000,36,True

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmusementPark.Api", "AmusementPark.Api\AmusementPark.Api.csproj", "{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmusementPark.Service", "AmusementPark.Service\AmusementPark.Service.csproj", "{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmusementPark.Core", "AmusementPark.Core\AmusementPark.Core.csproj", "{01065FB5-6AF3-40AA-89EC-4F2BF859E178}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmusementPark.Data", "AmusementPark.Data\AmusementPark.Data.csproj", "{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C98C764-3F6A-4210-A3C2-1CB081728AE0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmusementPark.Extesion", "AmusementPark.Extesion\AmusementPark.Extesion.csproj", "{2BC9AD1D-79C9-4461-8F22-BD71E2DD50D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB557B9-20C2-4B3F-A74B-A00B2FC889B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06BC13DF-C266-4C71-8BD9-E37FBA75EB66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01065FB5-6AF3-40AA-89EC-4F2BF859E178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01065FB5-6AF3-40AA-89EC-4F2BF859E178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01065FB5-6AF3-40AA-89EC-4F2BF859E178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01065FB5-6AF3-40AA-89EC-4F2BF859E178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE29B3C-61C0-4DEC-84ED-C499CE05B722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BC9AD1D-79C9-4461-8F22-BD71E2DD50D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC9AD1D-79C9-4461-8F22-BD71E2DD50D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC9AD1D-79C9-4461-8F22-BD71E2DD50D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC9AD1D-79C9-4461-8F22-BD71E2DD50D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {819F94B5-C0CC-4C41-B62D-E362FD40AAAC}
+	EndGlobalSection
+EndGlobal

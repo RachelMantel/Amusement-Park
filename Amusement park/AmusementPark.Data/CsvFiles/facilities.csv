@@ -1,0 +1,6 @@
+Id,Name,Description,NumVisitorsForDay,MinimalAge,NumofWorkers,Status,RoundDuration
+1,Roller Coaster,"High-speed twists, drops, and turns.",1500,10,8,True,20
+3,Swinging Chairs,Suspended chairs swinging in circles.,1000,8,6,True,20
+4,Carousel,Rotating ride with moving animals.,500,9,7,False,10
+5,Swinging Chairs,Suspended chairs swinging in circles.,800,6,5,True,15
+6,Pirate Ship,Rocking ship swings back and forth.,900,5,4,True,10

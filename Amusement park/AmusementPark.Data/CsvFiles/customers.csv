@@ -1,0 +1,5 @@
+Id,Tz,Name,Email,Phone,Password,DateRegistration,Points,CustomerType
+1,123456789,Mali,mali@gmail.com,527185040,123,06/11/2024 09:00:00,10,new
+2,258741963,Debi,debi@gmail.com,526325412,456,06/11/2024 09:00:00,20,old
+3,951487263,Eli,eli@gmail.com,533178555,236,07/11/2024 09:00:00,30,new
+0,string,string,string,string,string,11/24/2024 20:43:43,0,string
