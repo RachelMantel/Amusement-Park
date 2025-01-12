@@ -11,39 +11,45 @@ namespace AmusementPark.Service
 {
     public class CustomerService : Iservice<CustomerEntity>
     {
-        readonly ICustomerRepository _customerRepository;
+        readonly IRepositoryManager _repositoryManager;
 
-        public CustomerService(ICustomerRepository customerRepository)
+        public CustomerService(IRepositoryManager repositoryManager)
         {
-            _customerRepository = customerRepository;
+            _repositoryManager = repositoryManager;
         }
         public IEnumerable<CustomerEntity> getall()
         {
-            return _customerRepository.GetFull();
+            return _repositoryManager._customerRepository.GetFull();
         }
 
         public CustomerEntity? getById(int id)
         {
 
-            return _customerRepository.GetById(id);
+            return _repositoryManager._customerRepository.GetById(id);
         }
 
         public CustomerEntity add(CustomerEntity customer)
         {
             if (customer == null)
                 return null;
-
-            return _customerRepository.Add(customer);
+           
+            var help =_repositoryManager._customerRepository.Add(customer);
+            _repositoryManager.save();
+            return help;
         }
 
         public CustomerEntity update(int id,CustomerEntity customer)
         {
-            return _customerRepository.Update(id,customer);
+            var help = _repositoryManager._customerRepository.Update(id,customer);
+            _repositoryManager.save();
+            return help;
         }
 
         public bool delete(int id)
         {
-            return _customerRepository.Delete(id);
+            var b=_repositoryManager._customerRepository.Delete(id);
+            _repositoryManager.save();
+            return b;
         }
 
     }

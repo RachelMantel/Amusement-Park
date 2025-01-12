@@ -13,8 +13,8 @@ namespace AmusementPark.Data.Repositories
     public class TicketRepository : Repository<TicketEntity>, ITicketRepository
     {
         readonly DbSet<TicketEntity> _dbset;
-        public TicketRepository(DataContext dataContext, IRepositoryManager repositoryManager)
-            : base(dataContext, repositoryManager)
+        public TicketRepository(DataContext dataContext)
+            : base(dataContext)
         {
             _dbset = dataContext.Set<TicketEntity>();
         }

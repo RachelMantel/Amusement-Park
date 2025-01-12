@@ -15,10 +15,9 @@ namespace AmusementPark.Data.Repositories
         private readonly DataContext help;
         private readonly DbSet<T> _dataSet;
         private readonly IRepositoryManager _iManager;
-        public Repository(DataContext dataContext, IRepositoryManager manager)
+        public Repository(DataContext dataContext)
         {
             _dataSet = dataContext.Set<T>();
-            _iManager = manager;
         }
         public IEnumerable<T> Get()
         {
@@ -31,7 +30,6 @@ namespace AmusementPark.Data.Repositories
         public T Add(T t)
         {
             _dataSet.Add(t);
-            _iManager.save();
             return t;
         }
 
@@ -57,7 +55,6 @@ namespace AmusementPark.Data.Repositories
                 }
             }
 
-            _iManager.save();
             return existingEntity;
         }
         public bool Delete(int id)
@@ -66,7 +63,6 @@ namespace AmusementPark.Data.Repositories
             if (find != null)
             {
                 _dataSet.Remove(find);
-                _iManager.save();
                 return true;
             }
             return false;

@@ -15,6 +15,10 @@ namespace AmusementPark.Extesion
     {
         public static void ServiceDependency(this IServiceCollection s)
         {
+            s.AddDbContext<DataContext>(option =>
+            {
+                option.UseSqlServer("Data Source = DESKTOP-SSNMLFD; Initial Catalog = AmusementPark; Integrated Security = true; ");
+            });
 
             s.AddScoped<Iservice<CustomerEntity>, CustomerService>();
             s.AddScoped<Iservice<EmployeeEntity>, EmployeeService>();
@@ -27,15 +31,11 @@ namespace AmusementPark.Extesion
             s.AddScoped<IEmployeeRepository, EmployeeRepository>();
             s.AddScoped<IOrderRepository, OrderRepository>();
             s.AddScoped<ITicketRepository, TicketRepository>();
-            s.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            s.AddScoped<IRepositoryManager, RepositoryManager>();
-            s.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            s.AddScoped<IRepositoryManager, RepositoryManager>();
 
-            s.AddDbContext<DataContext>(option =>
-            {
-                option.UseSqlServer("Data Source = DESKTOP-SSNMLFD; Initial Catalog = AmusementPark; Integrated Security = true; ");
-            });
+            s.AddScoped<IRepositoryManager, RepositoryManager>();
+            s.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+          
         }
     }
 }

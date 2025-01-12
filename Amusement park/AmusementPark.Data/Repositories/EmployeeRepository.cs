@@ -13,8 +13,8 @@ namespace AmusementPark.Data.Repositories
     public class EmployeeRepository : Repository<EmployeeEntity>, IEmployeeRepository
     {
         readonly DbSet<EmployeeEntity> _dbset;
-        public EmployeeRepository(DataContext dataContext, IRepositoryManager repositoryManager)
-            : base(dataContext, repositoryManager)
+        public EmployeeRepository(DataContext dataContext)
+            : base(dataContext)
         {
             _dbset = dataContext.Set<EmployeeEntity>();
         }

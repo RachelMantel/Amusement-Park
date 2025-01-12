@@ -11,40 +11,44 @@ namespace AmusementPark.Service
 {
     public class OrderService : Iservice<OrderEntity>
     {
-        readonly IOrderRepository _orderRepository;
+        readonly IRepositoryManager _repositoryManager;
 
-        public OrderService(IOrderRepository orderRepository)
+        public OrderService(IRepositoryManager repositoryManager)
         {
-            _orderRepository = orderRepository;
+            _repositoryManager = repositoryManager;
         }
         public IEnumerable<OrderEntity> getall()
         {
-            return _orderRepository.GetFull();
+            return _repositoryManager._orderRepository.GetFull();
         }
 
         public OrderEntity getById(int id)
         {
-
-            return _orderRepository.GetById(id);
+            return _repositoryManager._orderRepository.GetById(id);
         }
 
         public OrderEntity add(OrderEntity order)
         {
             if (order == null)
                 return null;
-
-            return _orderRepository.Add(order);
+            var help=_repositoryManager._orderRepository.Add(order);
+            _repositoryManager.save();
+            return help;
         }
 
         public OrderEntity update(int id,OrderEntity order)
         {
-            return _orderRepository.Update(id, order);
+            var help = _repositoryManager._orderRepository.Update(id, order);
+            _repositoryManager.save();
+            return help;
         }
 
         public bool delete(int id)
         {
 
-          return _orderRepository.Delete(id);
+            var help = _repositoryManager._orderRepository.Delete(id);
+            _repositoryManager.save();
+            return help;
         }
     }
 }

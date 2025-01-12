@@ -11,21 +11,20 @@ namespace AmusementPark.Service
 {
     public class FacilitieService : Iservice<FacilitieEntity>
     {
-        readonly IFacilitieRepository _facilitieRepository;
-
-        public FacilitieService(IFacilitieRepository facilitieRepository)
+        readonly IRepositoryManager _repositoryManager;
+        public FacilitieService(IRepositoryManager repositoryManager)
         {
-            _facilitieRepository = facilitieRepository;
+            _repositoryManager = repositoryManager;
         }
         public IEnumerable<FacilitieEntity> getall()
         {
-            return _facilitieRepository.GetFull();
+            return _repositoryManager._facilitieRepository.GetFull();
         }
 
         public FacilitieEntity getById(int id)
         {
 
-            return _facilitieRepository.GetById(id);
+            return _repositoryManager._facilitieRepository.GetById(id);
         }
 
         public FacilitieEntity add(FacilitieEntity facilitie)
@@ -33,18 +32,24 @@ namespace AmusementPark.Service
             if (facilitie == null)
                 return null;
 
-            return _facilitieRepository.Add(facilitie);
+           var help =_repositoryManager._facilitieRepository.Add(facilitie);
+            _repositoryManager.save();
+            return help;
         }
 
         public FacilitieEntity update(int id,FacilitieEntity facilitie)
         {
-            return _facilitieRepository.Update(id,facilitie);
+            var help = _repositoryManager._facilitieRepository.Update(id,facilitie);
+            _repositoryManager.save();
+            return help;
         }
 
         public bool delete(int id)
         {
 
-          return _facilitieRepository.Delete(id);
+            var help = _repositoryManager._facilitieRepository.Delete(id);
+            _repositoryManager.save();
+            return help;
         }
     }
 }

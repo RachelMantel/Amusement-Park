@@ -11,21 +11,21 @@ namespace AmusementPark.Service
 {
     public class TicketService : Iservice<TicketEntity>
     {
-        readonly ITicketRepository _ticketRepository;
+        readonly IRepositoryManager _repositoryManager;
 
-        public TicketService(ITicketRepository ticketRepository)
+        public TicketService(IRepositoryManager repositoryManager)
         {
-            _ticketRepository = ticketRepository;
+            repositoryManager = _repositoryManager;
         }
         public IEnumerable<TicketEntity> getall()
         {
-            return _ticketRepository.GetFull();
+            return _repositoryManager._ticketRepository.GetFull();
         }
 
         public TicketEntity getById(int id)
         {
 
-            return _ticketRepository.GetById(id);
+            return _repositoryManager._ticketRepository.GetById(id);
         }
 
         public TicketEntity add(TicketEntity ticket)
@@ -33,18 +33,23 @@ namespace AmusementPark.Service
             if (ticket == null)
                 return null;
 
-            return _ticketRepository.Add(ticket);
+            var help=_repositoryManager._ticketRepository.Add(ticket);
+            _repositoryManager.save();
+            return help;
         }
 
         public TicketEntity update(int id,TicketEntity ticket)
         {
-            return _ticketRepository.Update(id,ticket);
+            var help = _repositoryManager._ticketRepository.Update(id,ticket);
+            _repositoryManager.save();
+            return help;
         }
 
         public bool delete(int id)
         {
-
-           return _ticketRepository.Delete(id);
+            var help = _repositoryManager._ticketRepository.Delete(id);
+            _repositoryManager.save();
+            return help;
         }
     }
 }

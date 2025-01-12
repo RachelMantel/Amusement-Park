@@ -13,8 +13,8 @@ namespace AmusementPark.Data.Repositories
     public class OrderRepository : Repository<OrderEntity>, IOrderRepository
     {
         readonly DbSet<OrderEntity> _dbset;
-        public OrderRepository(DataContext dataContext, IRepositoryManager repositoryManager)
-            : base(dataContext, repositoryManager)
+        public OrderRepository(DataContext dataContext)
+            : base(dataContext)
         {
             _dbset = dataContext.Set<OrderEntity>();
         }

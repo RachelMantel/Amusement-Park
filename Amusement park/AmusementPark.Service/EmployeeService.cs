@@ -11,21 +11,19 @@ namespace AmusementPark.Service
 {
     public class EmployeeService : Iservice<EmployeeEntity>
     {
-        readonly IEmployeeRepository _employeeRepository;
-
-        public EmployeeService(IEmployeeRepository employeeRepository)
+        readonly IRepositoryManager _repositoryManager;
+        public EmployeeService(IRepositoryManager repositoryManager)
         {
-            _employeeRepository = employeeRepository;
+            _repositoryManager = repositoryManager;
         }
         public IEnumerable<EmployeeEntity> getall()
         {
-            return _employeeRepository.GetFull();
+            return _repositoryManager._employeeRepository.GetFull();
         }
 
         public EmployeeEntity getById(int id)
         {
-
-            return _employeeRepository.GetById(id);
+            return _repositoryManager._employeeRepository.GetById(id);
         }
 
         public EmployeeEntity add(EmployeeEntity employee )
@@ -33,18 +31,23 @@ namespace AmusementPark.Service
             if (employee == null)
                 return null;
 
-            return _employeeRepository.Add(employee);
+           var help=_repositoryManager._employeeRepository.Add(employee);
+            _repositoryManager.save();
+            return help;
         }
 
         public EmployeeEntity update(int id,EmployeeEntity employee)
         {
-            return _employeeRepository.Update(id,employee);
+            var help = _repositoryManager._employeeRepository.Update(id,employee);
+            _repositoryManager.save();
+            return help;
         }
 
         public bool delete(int id)
         {
-
-          return _employeeRepository.Delete(id);
+            var help = _repositoryManager._employeeRepository.Delete(id);
+            _repositoryManager.save();
+            return help;
         }
     }
 }
