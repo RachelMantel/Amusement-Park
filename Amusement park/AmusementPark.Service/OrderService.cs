@@ -1,6 +1,8 @@
-﻿using AmusementPark.Core.Entities;
+﻿using AmusementPark.Core.DTOs;
+using AmusementPark.Core.Entities;
 using AmusementPark.Core.InterfaceRepository;
 using AmusementPark.Core.InterfaceService;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,38 +11,53 @@ using System.Threading.Tasks;
 
 namespace AmusementPark.Service
 {
-    public class OrderService : Iservice<OrderEntity>
+    public class OrderService : Iservice<OrderDto>
     {
-        readonly IRepositoryManager _repositoryManager;
+        private readonly IRepositoryManager _repositoryManager;
+        private readonly IMapper _mapper;
 
-        public OrderService(IRepositoryManager repositoryManager)
+        public OrderService(IRepositoryManager repositoryManager,IMapper mapper)
         {
             _repositoryManager = repositoryManager;
+            _mapper = mapper;
         }
-        public IEnumerable<OrderEntity> getall()
+        public IEnumerable<OrderDto> getall()
         {
-            return _repositoryManager._orderRepository.GetFull();
+            var orders = _repositoryManager._orderRepository.GetFull();
+            //map to dto
+            var orderD = _mapper.Map<List<OrderDto>>(orders);
+            return orderD;
         }
 
-        public OrderEntity getById(int id)
+        public OrderDto getById(int id)
         {
-            return _repositoryManager._orderRepository.GetById(id);
+            var order = _repositoryManager._orderRepository.GetById(id);
+            var orderDto = _mapper.Map<OrderDto>(order);
+
+            return orderDto;
         }
 
-        public OrderEntity add(OrderEntity order)
+        public OrderDto add(OrderDto order)
         {
             if (order == null)
                 return null;
-            var help=_repositoryManager._orderRepository.Add(order);
+
+            var orderD = _mapper.Map<OrderEntity>(order);
+            _repositoryManager._orderRepository.Add(orderD);
             _repositoryManager.save();
-            return help;
+
+            return _mapper.Map<OrderDto>(order);
         }
 
-        public OrderEntity update(int id,OrderEntity order)
+        public OrderDto update(int id,OrderDto order)
         {
-            var help = _repositoryManager._orderRepository.Update(id, order);
+            var orderModel = _mapper.Map<OrderEntity>(order);
+            var help = _repositoryManager._orderRepository.Update(id, orderModel);
+            if (help == null)
+                return null;
             _repositoryManager.save();
-            return help;
+            order = _mapper.Map<OrderDto>(help);
+            return order;
         }
 
         public bool delete(int id)

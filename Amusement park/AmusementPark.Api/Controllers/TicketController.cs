@@ -1,5 +1,9 @@
-﻿using AmusementPark.Core.Entities;
+﻿using AmusementPark.Api.PostModels;
+using AmusementPark.Core.DTOs;
+using AmusementPark.Core.Entities;
 using AmusementPark.Core.InterfaceService;
+using AmusementPark.Service;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,22 +15,24 @@ namespace AmusementPark.Api.Controllers
     public class TicketController : ControllerBase
     {
 
-        readonly Iservice<TicketEntity> _ticketService;
+        readonly Iservice<TicketDto> _ticketService;
+        private readonly IMapper _mapper;
 
-        public TicketController(Iservice<TicketEntity> ticketService)
+        public TicketController(Iservice<TicketDto> ticketService,IMapper mapper)
         {
             _ticketService = ticketService;
+            _mapper = mapper;
         }
         // GET: api/<TicketController>
         [HttpGet]
-        public List<TicketEntity> Get()
+        public List<TicketDto> Get()
         {
             return _ticketService.getall().ToList();
         }
 
         // GET api/<TicketController>/5
         [HttpGet("{id}")]
-        public ActionResult<TicketEntity> Get(int id)
+        public ActionResult<TicketDto> Get(int id)
         {
             if (_ticketService.getById(id) == null)
                 return NotFound();
@@ -35,20 +41,20 @@ namespace AmusementPark.Api.Controllers
 
         // POST api/<TicketController>
         [HttpPost]
-        public ActionResult<bool> Post([FromBody] TicketEntity ticket)
+        public ActionResult<bool> Post([FromBody] TicketPostModel ticket)
         {
-            if (_ticketService.add(ticket) != null)
-                return Ok();
-            return BadRequest();
+            var ticketDto = _mapper.Map<TicketDto>(ticket);
+            ticketDto = _ticketService.add(ticketDto);
+            return Ok(ticketDto);
         }
 
         // PUT api/<TicketController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] TicketEntity ticket)
+        public ActionResult Put(int id, [FromBody] TicketPostModel ticket)
         {
-            if (_ticketService.update(id, ticket) == null)
-                return NotFound();
-            return Ok();
+            var ticketDto = _mapper.Map<TicketDto>(ticket);
+            ticketDto = _ticketService.update(id,ticketDto);
+            return Ok(ticketDto);
         }
 
         // DELETE api/<TicketController>/5

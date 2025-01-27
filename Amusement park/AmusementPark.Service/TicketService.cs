@@ -1,6 +1,8 @@
-﻿using AmusementPark.Core.Entities;
+﻿using AmusementPark.Core.DTOs;
+using AmusementPark.Core.Entities;
 using AmusementPark.Core.InterfaceRepository;
 using AmusementPark.Core.InterfaceService;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,40 +11,54 @@ using System.Threading.Tasks;
 
 namespace AmusementPark.Service
 {
-    public class TicketService : Iservice<TicketEntity>
+    public class TicketService : Iservice<TicketDto>
     {
-        readonly IRepositoryManager _repositoryManager;
+        private readonly IRepositoryManager _repositoryManager;
+        private readonly IMapper _mapper; 
 
-        public TicketService(IRepositoryManager repositoryManager)
+        public TicketService(IRepositoryManager repositoryManager,IMapper mapper)
         {
             repositoryManager = _repositoryManager;
+            _mapper = mapper;
         }
-        public IEnumerable<TicketEntity> getall()
+        public IEnumerable<TicketDto> getall()
         {
-            return _repositoryManager._ticketRepository.GetFull();
+            var tickets = _repositoryManager._ticketRepository.GetFull();
+            //map to dto
+            var ticketDtos = _mapper.Map<List<TicketDto>>(tickets);
+            return ticketDtos;
         }
 
-        public TicketEntity getById(int id)
+        public TicketDto getById(int id)
         {
 
-            return _repositoryManager._ticketRepository.GetById(id);
+            var ticket = _repositoryManager._ticketRepository.GetById(id);
+            var ticketDto = _mapper.Map<TicketDto>(ticket);
+
+            return ticketDto;
         }
 
-        public TicketEntity add(TicketEntity ticket)
+        public TicketDto add(TicketDto ticket)
         {
             if (ticket == null)
                 return null;
 
-            var help=_repositoryManager._ticketRepository.Add(ticket);
+            var ticketD = _mapper.Map<TicketEntity>(ticket);
+            _repositoryManager._ticketRepository.Add(ticketD);
             _repositoryManager.save();
-            return help;
+
+            return _mapper.Map<TicketDto>(ticket);
         }
 
-        public TicketEntity update(int id,TicketEntity ticket)
+        public TicketDto update(int id,TicketDto ticket)
         {
-            var help = _repositoryManager._ticketRepository.Update(id,ticket);
+            var ticketModel = _mapper.Map<TicketEntity>(ticket);
+            var help = _repositoryManager._ticketRepository.Update(id, ticketModel);
+            if (help == null)
+                return null;
             _repositoryManager.save();
-            return help;
+            ticket = _mapper.Map<TicketDto>(help);
+            return ticket;
         }
 
         public bool delete(int id)

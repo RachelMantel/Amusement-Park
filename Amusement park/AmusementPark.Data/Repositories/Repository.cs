@@ -14,7 +14,6 @@ namespace AmusementPark.Data.Repositories
     {
         private readonly DataContext help;
         private readonly DbSet<T> _dataSet;
-        private readonly IRepositoryManager _iManager;
         public Repository(DataContext dataContext)
         {
             _dataSet = dataContext.Set<T>();

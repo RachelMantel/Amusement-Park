@@ -1,5 +1,9 @@
-﻿using AmusementPark.Core.Entities;
+﻿using AmusementPark.Api.PostModels;
+using AmusementPark.Core.DTOs;
+using AmusementPark.Core.Entities;
 using AmusementPark.Core.InterfaceService;
+using AmusementPark.Service;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -10,23 +14,24 @@ namespace AmusementPark.Api.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
-        readonly Iservice<OrderEntity> _orderService;
-
-        public OrderController(Iservice<OrderEntity> orderService)
+        readonly Iservice<OrderDto> _orderService;
+        private readonly IMapper _mapper;
+        public OrderController(Iservice<OrderDto> orderService,IMapper mapper)
         {
             _orderService = orderService;
+            _mapper = mapper;
         }
 
         // GET: api/<OrderController>
         [HttpGet]
-        public List<OrderEntity> Get()
+        public List<OrderDto> Get()
         {
             return _orderService.getall().ToList();
         }
 
         // GET api/<OrderController>/5
         [HttpGet("{id}")]
-        public ActionResult<OrderEntity> Get(int id)
+        public ActionResult<OrderDto> Get(int id)
         {
             if (_orderService.getById(id) == null)
                 return NotFound();
@@ -35,20 +40,20 @@ namespace AmusementPark.Api.Controllers
 
         // POST api/<OrderController>
         [HttpPost]
-        public ActionResult<bool> Post([FromBody] OrderEntity order)
+        public ActionResult<bool> Post([FromBody] OrderPostModel order)
         {
-            if (_orderService.add(order) != null)
-                return Ok();
-            return BadRequest();
+            var orderDto = _mapper.Map<OrderDto>(order);
+            orderDto = _orderService.add(orderDto);
+            return Ok(orderDto);
         }
 
         // PUT api/<OrderController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] OrderEntity order)
+        public ActionResult Put(int id, [FromBody] OrderPostModel order)
         {
-            if (_orderService.update(id, order) == null)
-                return NotFound();
-            return Ok();
+            var orderDto = _mapper.Map<OrderDto>(order);
+            orderDto = _orderService.update(id,orderDto);
+            return Ok(orderDto);
         }
 
         // DELETE api/<OrderController>/5

@@ -8,13 +8,16 @@ using AmusementPark.Extesion;
 using AmusementPark.Service;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
+using AmusementPark.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddAutoMapper(typeof(MappingPostProfile));
 
 builder.Services.ServiceDependency();
+
 
 builder.Services.AddControllers().AddJsonOptions(options =>
 {

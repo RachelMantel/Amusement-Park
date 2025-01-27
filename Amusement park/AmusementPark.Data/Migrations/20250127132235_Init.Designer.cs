@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AmusementPark.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241222160126_one-to-one2")]
-    partial class onetoone2
+    [Migration("20250127132235_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -107,7 +107,12 @@ namespace AmusementPark.Data.Migrations
                     b.Property<int>("WorkingHours")
                         .HasColumnType("int");
 
+                    b.Property<int?>("facilitieId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("facilitieId");
 
                     b.ToTable("Employees");
                 });
@@ -172,9 +177,6 @@ namespace AmusementPark.Data.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<int?>("TicketEntityId")
-                        .HasColumnType("int");
-
                     b.Property<int>("TicketId")
                         .HasColumnType("int");
 
@@ -182,7 +184,7 @@ namespace AmusementPark.Data.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.HasIndex("TicketEntityId");
+                    b.HasIndex("TicketId");
 
                     b.ToTable("Orders");
                 });
@@ -208,9 +210,21 @@ namespace AmusementPark.Data.Migrations
                     b.Property<DateTime>("Validity")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("orderId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Tickets");
+                });
+
+            modelBuilder.Entity("AmusementPark.Core.Entities.EmployeeEntity", b =>
+                {
+                    b.HasOne("AmusementPark.Core.Entities.FacilitieEntity", "facilitie")
+                        .WithMany("employees")
+                        .HasForeignKey("facilitieId");
+
+                    b.Navigation("facilitie");
                 });
 
             modelBuilder.Entity("AmusementPark.Core.Entities.OrderEntity", b =>
@@ -221,11 +235,15 @@ namespace AmusementPark.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AmusementPark.Core.Entities.TicketEntity", null)
-                        .WithMany("Order")
-                        .HasForeignKey("TicketEntityId");
+                    b.HasOne("AmusementPark.Core.Entities.TicketEntity", "ticket")
+                        .WithMany()
+                        .HasForeignKey("TicketId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Customer");
+
+                    b.Navigation("ticket");
                 });
 
             modelBuilder.Entity("AmusementPark.Core.Entities.CustomerEntity", b =>
@@ -233,9 +251,9 @@ namespace AmusementPark.Data.Migrations
                     b.Navigation("Orders");
                 });
 
-            modelBuilder.Entity("AmusementPark.Core.Entities.TicketEntity", b =>
+            modelBuilder.Entity("AmusementPark.Core.Entities.FacilitieEntity", b =>
                 {
-                    b.Navigation("Order");
+                    b.Navigation("employees");
                 });
 #pragma warning restore 612, 618
         }

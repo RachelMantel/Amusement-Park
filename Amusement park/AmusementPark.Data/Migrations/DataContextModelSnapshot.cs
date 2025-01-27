@@ -182,8 +182,7 @@ namespace AmusementPark.Data.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.HasIndex("TicketId")
-                        .IsUnique();
+                    b.HasIndex("TicketId");
 
                     b.ToTable("Orders");
                 });
@@ -209,6 +208,9 @@ namespace AmusementPark.Data.Migrations
                     b.Property<DateTime>("Validity")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("orderId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Tickets");
@@ -232,8 +234,8 @@ namespace AmusementPark.Data.Migrations
                         .IsRequired();
 
                     b.HasOne("AmusementPark.Core.Entities.TicketEntity", "ticket")
-                        .WithOne("Order")
-                        .HasForeignKey("AmusementPark.Core.Entities.OrderEntity", "TicketId")
+                        .WithMany()
+                        .HasForeignKey("TicketId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -250,12 +252,6 @@ namespace AmusementPark.Data.Migrations
             modelBuilder.Entity("AmusementPark.Core.Entities.FacilitieEntity", b =>
                 {
                     b.Navigation("employees");
-                });
-
-            modelBuilder.Entity("AmusementPark.Core.Entities.TicketEntity", b =>
-                {
-                    b.Navigation("Order")
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

@@ -1,6 +1,8 @@
-﻿using AmusementPark.Core.Entities;
+﻿using AmusementPark.Core.DTOs;
+using AmusementPark.Core.Entities;
 using AmusementPark.Core.InterfaceRepository;
 using AmusementPark.Core.InterfaceService;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,40 +11,56 @@ using System.Threading.Tasks;
 
 namespace AmusementPark.Service
 {
-    public class CustomerService : Iservice<CustomerEntity>
+    public class CustomerService : Iservice<CustomerDto>
     {
-        readonly IRepositoryManager _repositoryManager;
+        private readonly IRepositoryManager _repositoryManager;
+        private readonly IMapper _mapper;
 
-        public CustomerService(IRepositoryManager repositoryManager)
+        public CustomerService(IRepositoryManager repositoryManager,IMapper mapper)
         {
             _repositoryManager = repositoryManager;
+            _mapper = mapper;
         }
-        public IEnumerable<CustomerEntity> getall()
+        public IEnumerable<CustomerDto> getall()
         {
-            return _repositoryManager._customerRepository.GetFull();
+            var customer = _repositoryManager._customerRepository.GetFull();
+            //map to dto
+            var customerDtos = _mapper.Map<List<CustomerDto>>(customer);
+            return customerDtos;
+
         }
 
-        public CustomerEntity? getById(int id)
+        public CustomerDto? getById(int id)
         {
+            var customer = _repositoryManager._customerRepository.GetById(id);
+            var customerDtos = _mapper.Map<CustomerDto>(customer);
 
-            return _repositoryManager._customerRepository.GetById(id);
+            return customerDtos;
         }
 
-        public CustomerEntity add(CustomerEntity customer)
+        public CustomerDto add(CustomerDto customer)
         {
             if (customer == null)
                 return null;
-           
-            var help =_repositoryManager._customerRepository.Add(customer);
+
+            var customerModel = _mapper.Map<CustomerEntity>(customer);
+            _repositoryManager._customerRepository.Add(customerModel);
             _repositoryManager.save();
-            return help;
+
+            return _mapper.Map<CustomerDto>(customer);
+
         }
 
-        public CustomerEntity update(int id,CustomerEntity customer)
+        public CustomerDto update(int id,CustomerDto customer)
         {
-            var help = _repositoryManager._customerRepository.Update(id,customer);
+           
+            var customerModel = _mapper.Map<CustomerEntity>(customer);
+            var help = _repositoryManager._customerRepository.Update(id,customerModel);
+            if (help == null)
+                return null;
             _repositoryManager.save();
-            return help;
+           customer = _mapper.Map<CustomerDto>(help);
+            return customer;
         }
 
         public bool delete(int id)
@@ -52,5 +70,6 @@ namespace AmusementPark.Service
             return b;
         }
 
+        
     }
 }

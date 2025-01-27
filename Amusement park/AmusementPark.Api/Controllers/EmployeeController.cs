@@ -1,6 +1,10 @@
 ﻿
+using AmusementPark.Api.PostModels;
+using AmusementPark.Core.DTOs;
 using AmusementPark.Core.Entities;
 using AmusementPark.Core.InterfaceService;
+using AmusementPark.Service;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,22 +15,24 @@ namespace AmusementPark.Api.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        readonly Iservice<EmployeeEntity> _employeeService;
+        readonly Iservice<EmployeeDto> _employeeService;
+        private readonly IMapper _mapper;
 
-        public EmployeeController(Iservice<EmployeeEntity> employeeService)
+        public EmployeeController(Iservice<EmployeeDto> employeeService,IMapper mapper)
         {
             _employeeService = employeeService;
+            _mapper = mapper;
         }
 
         // GET: api/<EmployeeController>
         [HttpGet]
-        public List<EmployeeEntity> Get()
+        public List<EmployeeDto> Get()
         {
             return _employeeService.getall().ToList();
         }
         // GET api/<EmployeeController>/5
         [HttpGet("{id}")]
-        public ActionResult<EmployeeEntity> Get(int id)
+        public ActionResult<EmployeeDto> Get(int id)
         {
             if (_employeeService.getById(id) == null)
                 return NotFound();
@@ -36,20 +42,20 @@ namespace AmusementPark.Api.Controllers
 
         // POST api/<EmployeeController>
         [HttpPost]
-        public ActionResult<bool> Post([FromBody] EmployeeEntity employee)
+        public ActionResult<bool> Post([FromBody] EmployeePostModel employee)
         {
-            if (_employeeService.add(employee) != null)
-                return Ok();
-            return BadRequest();
+            var employeeDto = _mapper.Map<EmployeeDto>(employee);
+            employeeDto = _employeeService.add(employeeDto);
+            return Ok(employeeDto);
         }
 
         // PUT api/<EmployeeController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] EmployeeEntity employee)
+        public ActionResult Put(int id, [FromBody] EmployeePostModel employee)
         {
-            if (_employeeService.update(id, employee) == null)
-                return NotFound();
-            return Ok();
+            var customerDto = _mapper.Map<EmployeeDto>(employee);
+            customerDto = _employeeService.update(id,customerDto);
+            return Ok(customerDto);
         }
 
         // DELETE api/<EmployeeController>/5

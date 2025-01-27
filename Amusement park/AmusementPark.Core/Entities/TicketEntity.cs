@@ -16,8 +16,7 @@ namespace AmusementPark.Core.Entities
 
         public DateTime Validity { get; set; }
 
-        //one to one
-        public OrderEntity Order { get; set; }
+        public int orderId { get; set; }
 
         public TicketEntity()
         {

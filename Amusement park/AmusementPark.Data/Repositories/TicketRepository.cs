@@ -20,7 +20,7 @@ namespace AmusementPark.Data.Repositories
         }
         public IEnumerable<TicketEntity> GetFull()
         {
-            return _dbset.Include(z => z.Order).ToList();
+            return _dbset.Include(z => z.orderId).ToList();
         }
     }
 }
