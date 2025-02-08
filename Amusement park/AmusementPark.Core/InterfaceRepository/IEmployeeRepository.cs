@@ -9,6 +9,6 @@ namespace AmusementPark.Core.InterfaceRepository
 {
     public interface IEmployeeRepository:IRepository<EmployeeEntity>
     {
-        public IEnumerable<EmployeeEntity> GetFull();
+        public Task<IEnumerable<EmployeeEntity>> GetFullAsync();
     }
 }

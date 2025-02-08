@@ -8,13 +8,13 @@ namespace AmusementPark.Core.InterfaceRepository
 {
     public interface IRepository<T>
     {
-        IEnumerable<T> Get();
+        Task<IEnumerable<T>> GetAsync();
 
         T? GetById(int id);
 
         T Add(T entity);
 
-        T Update(int id,T entity);
+        T Update(int id, T entity);
 
         bool Delete(int id);
     }

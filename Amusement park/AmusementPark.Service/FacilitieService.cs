@@ -20,10 +20,9 @@ namespace AmusementPark.Service
             _repositoryManager = repositoryManager;
             _mapper = mapper;
         }
-        public IEnumerable<FacilitieDto> getall()
+        public async Task<IEnumerable<FacilitieDto>> getallAsync()
         {
-            var facilities = _repositoryManager._facilitieRepository.GetFull();
-            //map to dto
+            var facilities = await _repositoryManager._facilitieRepository.GetFullAsync();
             var facilitieD = _mapper.Map<List<FacilitieDto>>(facilities);
             return facilitieD;
         }

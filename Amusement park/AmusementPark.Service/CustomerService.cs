@@ -21,13 +21,11 @@ namespace AmusementPark.Service
             _repositoryManager = repositoryManager;
             _mapper = mapper;
         }
-        public IEnumerable<CustomerDto> getall()
+        public async Task<IEnumerable<CustomerDto>> getallAsync()
         {
-            var customer = _repositoryManager._customerRepository.GetFull();
-            //map to dto
-            var customerDtos = _mapper.Map<List<CustomerDto>>(customer);
+            var customers = await _repositoryManager._customerRepository.GetFullAsync();
+            var customerDtos = _mapper.Map<List<CustomerDto>>(customers);
             return customerDtos;
-
         }
 
         public CustomerDto? getById(int id)
@@ -70,6 +68,5 @@ namespace AmusementPark.Service
             return b;
         }
 
-        
     }
 }

@@ -26,9 +26,9 @@ namespace AmusementPark.Api.Controllers
 
         // GET: api/<EmployeeController>
         [HttpGet]
-        public List<EmployeeDto> Get()
+        public async Task<List<EmployeeDto>> Get()
         {
-            return _employeeService.getall().ToList();
+            return (List<EmployeeDto>)await _employeeService.getallAsync();
         }
         // GET api/<EmployeeController>/5
         [HttpGet("{id}")]

@@ -9,7 +9,7 @@ namespace AmusementPark.Core.InterfaceService
 {
     public interface Iservice<T>
     {
-        IEnumerable<T> getall();
+        Task<IEnumerable<T>> getallAsync();
 
          T? getById(int id);
 

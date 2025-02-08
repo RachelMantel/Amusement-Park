@@ -18,9 +18,9 @@ namespace AmusementPark.Data.Repositories
         {
             _dataSet = dataContext.Set<T>();
         }
-        public IEnumerable<T> Get()
+        public async Task<IEnumerable<T>> GetAsync()
         {
-            return _dataSet.ToList();
+            return await _dataSet.ToListAsync();
         }
         public T? GetById(int id)
         {

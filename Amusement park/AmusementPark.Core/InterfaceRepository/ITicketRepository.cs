@@ -9,7 +9,7 @@ namespace AmusementPark.Core.InterfaceRepository
 {
     public interface ITicketRepository:IRepository<TicketEntity>
     {
-        public IEnumerable<TicketEntity> GetFull();
+        public Task<IEnumerable<TicketEntity>> GetFullAsync();
 
     }
 }

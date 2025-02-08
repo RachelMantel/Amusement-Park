@@ -24,9 +24,9 @@ namespace AmusementPark.Api.Controllers
 
         // GET: api/<FacilitieController>
         [HttpGet]
-        public List<FacilitieDto> Get()
+        public async Task<List<FacilitieDto>> Get()
         {
-            return _facilityService.getall().ToList();
+            return (List<FacilitieDto>)await _facilityService.getallAsync();
         }
 
         // GET api/<FacilitieController>/5

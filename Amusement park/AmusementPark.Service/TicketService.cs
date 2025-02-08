@@ -21,9 +21,9 @@ namespace AmusementPark.Service
             repositoryManager = _repositoryManager;
             _mapper = mapper;
         }
-        public IEnumerable<TicketDto> getall()
+        public async Task<IEnumerable<TicketDto>> getallAsync()
         {
-            var tickets = _repositoryManager._ticketRepository.GetFull();
+            var tickets = await _repositoryManager._ticketRepository.GetFullAsync();
             //map to dto
             var ticketDtos = _mapper.Map<List<TicketDto>>(tickets);
             return ticketDtos;

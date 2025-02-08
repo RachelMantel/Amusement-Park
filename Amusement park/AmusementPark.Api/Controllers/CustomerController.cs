@@ -22,10 +22,11 @@ namespace AmusementPark.Api.Controllers
         }
         // GET: api/<CustomerController>
         [HttpGet]
-        public List<CustomerDto> Get()
+        public async Task<List<CustomerDto>> Get()
         {
-            return _customerService.getall().ToList();
+            return (List<CustomerDto>)await _customerService.getallAsync();
         }
+
 
         // GET api/<CustomerController>/5
         [HttpGet("{id}")]

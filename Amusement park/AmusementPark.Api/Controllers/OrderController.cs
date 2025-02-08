@@ -24,9 +24,9 @@ namespace AmusementPark.Api.Controllers
 
         // GET: api/<OrderController>
         [HttpGet]
-        public List<OrderDto> Get()
+        public async Task<List<OrderDto>> Get()
         {
-            return _orderService.getall().ToList();
+            return (List<OrderDto>)await _orderService.getallAsync();
         }
 
         // GET api/<OrderController>/5

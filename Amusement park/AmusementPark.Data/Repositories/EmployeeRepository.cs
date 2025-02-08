@@ -18,9 +18,9 @@ namespace AmusementPark.Data.Repositories
         {
             _dbset = dataContext.Set<EmployeeEntity>();
         }
-        public IEnumerable<EmployeeEntity> GetFull()
+        public async Task<IEnumerable<EmployeeEntity>> GetFullAsync()
         {
-            return _dbset.Include(e=>e.facilitie).ToList();
+            return await _dbset.Include(e=>e.facilitie).ToListAsync();
         }
     }
 }

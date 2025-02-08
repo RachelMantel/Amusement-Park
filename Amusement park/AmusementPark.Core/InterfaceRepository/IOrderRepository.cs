@@ -9,6 +9,6 @@ namespace AmusementPark.Core.InterfaceRepository
 {
     public interface IOrderRepository:IRepository<OrderEntity>
     {
-        public IEnumerable<OrderEntity> GetFull();
+        public Task<IEnumerable<OrderEntity>> GetFullAsync();
     }
 }

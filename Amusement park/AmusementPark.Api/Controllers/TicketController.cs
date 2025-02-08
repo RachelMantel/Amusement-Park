@@ -25,9 +25,9 @@ namespace AmusementPark.Api.Controllers
         }
         // GET: api/<TicketController>
         [HttpGet]
-        public List<TicketDto> Get()
+        public async Task<List<TicketDto>> Get()
         {
-            return _ticketService.getall().ToList();
+            return (List<TicketDto>)await _ticketService.getallAsync();
         }
 
         // GET api/<TicketController>/5
